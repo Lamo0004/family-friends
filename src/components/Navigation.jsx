@@ -9,7 +9,7 @@ import { FiUser } from "react-icons/fi";
 const Navigation = () => {
   const pathname = usePathname();
   return (
-    <nav className="fixed bottom-5 left-5 right-5">
+    <div className="fixed bottom-5 left-5 right-5">
       <ul className="flex justify-around">
         <li>
           <Link href="/">
@@ -32,7 +32,7 @@ const Navigation = () => {
           </Link>
         </li>
       </ul>
-    </nav>
+    </div>
   );
 };
 

@@ -42,6 +42,12 @@ h2 {
   font-weight: 700;
 }
 
-p {
-  color: var(--gray);
+/* Skjul scrollbar på mobilen */
+section::-webkit-scrollbar {
+  display: none; /* Skjuler scrollbaren */
+}
+
+section {
+  -ms-overflow-style: none; /* For IE og Edge */
+  scrollbar-width: none; /* For Firefox */
 }
