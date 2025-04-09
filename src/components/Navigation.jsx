@@ -9,7 +9,7 @@ import { FiUser } from "react-icons/fi";
 const Navigation = () => {
   const pathname = usePathname();
   return (
-    <div className="fixed bottom-5 left-5 right-5">
+    <div className="fixed bottom-0 left-5 right-5 rounded-tl-4xl rounded-tr-4xl rounded-bl-none rounded-br-none pt-4 pb-8 bg-[#ffffff]">
       <ul className="flex justify-around">
         <li>
           <Link href="/">
