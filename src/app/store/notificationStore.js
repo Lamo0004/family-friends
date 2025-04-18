@@ -1,5 +1,5 @@
-import { create } from "zustand";
-import { persist } from "zustand/middleware";
+import { create } from "zustand"; // Funktion importeres – opretter en store
+import { persist } from "zustand/middleware"; // Funktion importeres – gør at state (messages) kan blive gemt i browserens lokale lagring
 
 const useStore = create(
   persist(
