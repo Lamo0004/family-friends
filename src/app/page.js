@@ -1,11 +1,12 @@
-import Slider from "@/components/Slider";
 import ListServer from "@/components/ListServer";
+import ListClientWithFilter from "@/components/ListClientWithFilter";
 
-export default function Home() {
+export default async function HomePage() {
+  const data = await ListServer();
+
   return (
-    <div>
-      <Slider></Slider>
-      <ListServer></ListServer>
-    </div>
+    <main>
+      <ListClientWithFilter data={data} />
+    </main>
   );
 }

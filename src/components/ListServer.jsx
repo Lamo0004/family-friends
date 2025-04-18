@@ -1,5 +1,3 @@
-import ListClient from "./ListClient";
-
 const ListServer = async () => {
   const data = await fetch("https://api.petfinder.com/v2/animals", {
     headers: {
@@ -7,9 +5,7 @@ const ListServer = async () => {
     },
   });
   const animals = await data.json();
-  console.log(animals);
-
-  return <ListClient data={animals}></ListClient>;
+  return animals;
 };
 
 export default ListServer;
